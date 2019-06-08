@@ -1,5 +1,6 @@
 import React,{Component} from 'react';
-import InputForm from './Components/InputForm';
+import InputForm from './Components/Js/InputForm';
+import MovieList from './Components/Js/MovieList';
 import './App.css';
 
 
@@ -7,7 +8,7 @@ class App extends Component{
 	constructor(){
 		super()
 		this.state = {
-			input: ''
+			input: '',
 		}
 	}
 
@@ -19,6 +20,7 @@ class App extends Component{
 		return (
 		    <div className="App">
 		     	<InputForm onInputChange={this.onInputChange} />
+		     	<MovieList />
 		    </div>
 		  );
 		}
